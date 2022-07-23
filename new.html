@@ -1,12 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>salute</title>
-</head>
-<body>
-    <h1>嘿嘿，新页面</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>个人导航页</title>
+    <link rel="stylesheet" href="./daoHang.css" />
+  </head>
+  <body>
+    <main>
+      <!-- <label for="quota">素数个数：</label>
+    <input type="text" id="quota" name="quota" value="1000000" />
+
+    <button id="generate">生成素数</button>
+    <button id="reload">重载</button>
+
+    <div id="output"></div> -->
+      <div style="display: flex; align-items: center; justify-content: center">
+        <input id="neirong" type="text" value="" onkeypress="souSuo()" />
+        <button id="ss" onclick="souSuo()">百度一下</button>
+      </div>
+      <!-- <button id="dzs" onclick="dianZan()">0</button> -->
+      <div id="div1">
+        <div id="div2">
+          <a href="https://www.baidu.com" target="_blank"
+            ><img src="baidu.png" alt="百度"
+          /></a>
+          <div style="font-size: 20px">百度</div>
+        </div>
+        <div id="div2">
+          <a href="https://www.douyin.com/?enter=guide" target="_blank"
+            ><img src="douyin.jpeg" alt="抖音"
+          /></a>
+          <div style="font-size: 20px">抖音</div>
+        </div>
+        <div id="div2">
+          <a href="https://www.bilibili.com/" target="_blank"
+            ><img src="bilibili.png" alt="哔哩哔哩"
+          /></a>
+          <div style="font-size: 20px">哔哩哔哩</div>
+        </div>
+      </div>
+      <div id="div1">
+        <div id="div2">
+          <a href="https://www.runoob.com/" target="_blank"
+            ><img src="runoob-logo@2x.png" alt="菜鸟教程"
+          /></a>
+          <div style="font-size: 20px">菜鸟教程</div>
+        </div>
+        <div id="div2">
+          <a href="https://github.com/" target="_blank"
+            ><img src="github.jpg" alt="github"
+          /></a>
+          <div style="font-size: 20px">github</div>
+        </div>
+        <div id="div2">
+          <a href="#" target="_blank"><img src="" alt="" /></a>
+          <div style="font-size: 20px"></div>
+        </div>
+      </div>
+      <div id="div1">
+        <div id="div2">
+          <a href="#" target="_blank"><img src="" alt="" /></a>
+          <div style="font-size: 20px"></div>
+        </div>
+        <div id="div2">
+          <a href="#" target="_blank"><img src="" alt="" /></a>
+          <div style="font-size: 20px"></div>
+        </div>
+        <div id="div2">
+          <a href="#" target="_blank"><img src="" alt="" /></a>
+          <div style="font-size: 20px"></div>
+        </div>
+      </div>
+    </main>
+    <script>
+      // function dianZan() {
+      //   let dianZanShuBiaoQian = window.document.getElementById("dzs");
+      //   let dianZanShu = parseInt(dianZanShuBiaoQian.innerText);
+      //   let xinShuZi = dianZanShu + 1;
+      //   dianZanShuBiaoQian.innerText = xinShuZi;
+      //   return;
+      // }
+      // function generatePrimes(quota) {
+      //   function isPrime(n) {
+      //     for (let c = 2; c <= Math.sqrt(n); ++c) {
+      //       if (n % c === 0) {
+      //         return false;
+      //       }
+      //     }
+      //     return true;
+      //   }
+      //   const primes = [];
+      //   const maximum = 100000;
+      //   while (primes.lenght < quota) {
+      //     const candidate = Math.floor(Math.random() * (maximum + 1));
+      //     if (isPrime(candidate)) {
+      //       primes.push(candidate);
+      //     }
+      //   }
+      //   return primes;
+      // }
+      // document.querySelector("#generate").addEventListener("click", () => {
+      //   const quota = document.querySelector("#quota").value;
+      //   const primes = generatePrimes(quota);
+      //   document.querySelector(
+      //     "#output"
+      //   ).textContent = `完成！已生成素数${quota}个。`;
+      // });
+      // document.querySelector("#reload").addEventListener("click", () => {
+      //   document.location.reload();
+      // });
+
+      function souSuo() {
+        let neiRong = document.getElementById("neirong");
+        let nR = neiRong.value;
+        console.log(nR);
+        let baidu = "https://www.baidu.com/s?wd=";
+        let souSuoNeiRong = baidu.concat(nR);
+        console.log(souSuoNeiRong);
+        window.open(souSuoNeiRong);
+      }
+    </script>
+  </body>
 </html>

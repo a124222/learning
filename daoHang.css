@@ -1,0 +1,43 @@
+body {
+  background: url(background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#ss {
+  width: 100px;
+  height: 50px;
+  margin: 50px 0 50px 10px;
+}
+#neirong {
+  height: 50px;
+  width: 500px;
+  margin: 50px 0 50px 0;
+}
+#div1 {
+  display: flex;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+}
+#div2 {
+  display: flex;
+  margin: 76.8px;
+  padding-bottom: 10px;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid rgb(31, 146, 199);
+  border-radius: 5px;
+  width: 300px;
+  height: 80px;
+  justify-content: center;
+}
+img {
+  width: 150px;
+  height: 50px;
+}
+input {
+  font-size: large;
+}
+button {
+  font-size: large;
+}
